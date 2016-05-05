@@ -55,8 +55,7 @@ public class MainWindowController implements Initializable {
     private Canvas canvas1;
     @FXML
     private Canvas canvas2;
-    @FXML
-    private Label lblPocetBodu;
+    
     @FXML
     private Label lblNumberOfSegments;
     @FXML
@@ -75,7 +74,6 @@ public class MainWindowController implements Initializable {
         if (zadavaciRezim) {
             controlPoints[pointCount] = new Point2D(event.getX(), event.getY());
             pointCount++;
-            lblPocetBodu.setText("Počet bodů: " + pointCount);
             if (pointCount == 4) {
                 zadavaciRezim = false;
             }
@@ -110,7 +108,6 @@ public class MainWindowController implements Initializable {
         pointCount = 0;
         selectedPointIndex = -1;
         zadavaciRezim = true;
-        lblPocetBodu.setText("Počet bodů: " + pointCount);
         redrawCanvas();
     }
 
@@ -125,7 +122,7 @@ public class MainWindowController implements Initializable {
     @FXML
     private void sliderAdaptiveValueChange(){
         adaptiveValue = (int)sliderAdaptive.getValue();
-        lblAdaptiveValue.setText("" + adaptiveValue);
+        lblAdaptiveValue.setText("Práh: " + adaptiveValue);
         redrawCanvas();
     }
 

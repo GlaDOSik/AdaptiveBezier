@@ -31,27 +31,22 @@
       </Label>
       <Canvas fx:id="canvas1" height="400.0" layoutX="3.0" layoutY="82.0" onMouseDragged="#canvasDragged" onMousePressed="#canvasPress" width="400.0" />
       <Canvas fx:id="canvas2" height="400.0" layoutX="412.0" layoutY="82.0" onMouseDragged="#canvasDragged" onMousePressed="#canvasPress" width="400.0" />
-      <Label fx:id="lblPocetBodu" layoutX="686.0" layoutY="7.0" text="Počet bodů: 0">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Button layoutX="620.0" layoutY="5.0" mnemonicParsing="false" onAction="#cleanPoints" text="Smazat" />
-      <Label fx:id="lblNumberOfSegments" layoutX="14.0" layoutY="486.0" text="Počet bodů: 8">
+      <Button layoutX="666.0" layoutY="5.0" mnemonicParsing="false" onAction="#cleanPoints" text="Smazat kontrolní body" />
+      <Label fx:id="lblNumberOfSegments" layoutX="4.0" layoutY="486.0" text="Počet bodů: 8">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Slider fx:id="sliderSegment" layoutX="186.0" layoutY="493.0" max="60.0" min="1.0" onMouseDragged="#sliderSegmentChange" prefHeight="14.0" prefWidth="195.0" value="7.0" />
-      <Button layoutX="622.0" layoutY="36.0" mnemonicParsing="false" onAction="#showPoints" text="Zobraz body" />
-      <Label fx:id="lblVisiblePoints" layoutX="715.0" layoutY="40.0" text="ANO" />
-      <Label fx:id="lblAdaptiveValue" layoutX="401.0" layoutY="488.0" text="100">
+      <Slider fx:id="sliderSegment" layoutX="141.0" layoutY="493.0" max="60.0" min="1.0" onMouseDragged="#sliderSegmentChange" prefHeight="14.0" prefWidth="195.0" value="7.0" />
+      <Button layoutX="666.0" layoutY="36.0" mnemonicParsing="false" onAction="#showPoints" text="Zobraz body" />
+      <Label fx:id="lblVisiblePoints" layoutX="765.0" layoutY="40.0" text="ANO" />
+      <Label fx:id="lblAdaptiveValue" layoutX="366.0" layoutY="488.0" text="Práh: 100">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
       <Slider fx:id="sliderAdaptive" layoutX="442.0" layoutY="494.0" max="700.0" min="1.0" onMouseDragged="#sliderAdaptiveValueChange" prefHeight="14.0" prefWidth="237.0" value="100.0" />
-      <Label fx:id="lblNumberOfPointsAdaptive" layoutX="685.0" layoutY="487.0" text="Počet bodů:">
+      <Label fx:id="lblNumberOfPointsAdaptive" layoutX="686.0" layoutY="487.0" text="Počet bodů:">
          <font>
             <Font size="18.0" />
          </font>
